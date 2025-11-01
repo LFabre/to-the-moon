@@ -11,5 +11,5 @@ export const errorLogger = (error: Error, req: Request, _res: Response, next: Ne
     req.logger.info(`ErrorStandard originalError`, error.originalError ?? null);
   }
 
-  next();
+  next(error);
 };
