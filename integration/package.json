@@ -3,15 +3,7 @@
   "version": "0.0.1",
   "description": "Integration tests for to-the-moon API",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "docker:up": "docker-compose up -d",
-    "docker:up:no-migrate": "docker-compose up -d postgres api",
-    "docker:down": "docker-compose down",
-    "docker:logs": "docker-compose logs -f",
-    "docker:rebuild": "docker-compose up -d --build",
-    "docker:clean": "docker-compose down -v",
-    "migrate": "docker-compose run --rm migrate"
+    "test": "jest"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
@@ -23,4 +15,3 @@
     "typescript": "^5.9.3"
   }
 }
-

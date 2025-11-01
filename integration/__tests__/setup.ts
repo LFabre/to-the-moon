@@ -10,4 +10,5 @@ const Config = {
 
 export const apiClient = axios.create({
   baseURL: Config.api.baseUrl,
+  validateStatus: () => true, // Don't throw on any status code
 });
