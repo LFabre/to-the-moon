@@ -21,5 +21,7 @@ module.exports = {
     '^@routes/(.*)$': '<rootDir>/src/routes/$1',
     '^@services$': '<rootDir>/src/services/index.ts',
     '^@services/(.*)$': '<rootDir>/src/services/$1',
+    '^@utils$': '<rootDir>/src/utils/index.ts',
+    '^@utils/(.*)$': '<rootDir>/src/utils/$1',
   },
 };

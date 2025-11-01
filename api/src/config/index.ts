@@ -10,4 +10,7 @@ export const Config = {
   server: {
     port: process.env.LISTEN_PORT,
   },
+  request: {
+    traceHeader: 'x-trace',
+  },
 };

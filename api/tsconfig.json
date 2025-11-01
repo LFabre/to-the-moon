@@ -33,7 +33,9 @@
       "@routes": ["routes"],
       "@routes/*": ["routes/*"],
       "@services": ["services"],
-      "@services/*": ["services/*"]
+      "@services/*": ["services/*"],
+      "@utils": ["utils"],
+      "@utils/*": ["utils/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.json", "src/**/*.d.ts"],
