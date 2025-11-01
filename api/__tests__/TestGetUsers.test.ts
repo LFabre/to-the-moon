@@ -2,11 +2,11 @@ import supertest from 'supertest';
 import { MainApp } from '../src/app';
 import { ModelUser } from '../src/database/models';
 
-jest.spyOn(ModelUser, 'findAndCountAll');
+const mockFindAndCountAll = jest.spyOn(ModelUser, 'findAndCountAll');
 
 describe('Get Users', () => {
   it('Should query 10 users when no query params are provided', async () => {
-    const mockFindAndCountAll = jest.spyOn(ModelUser, 'findAndCountAll').mockResolvedValue({
+    mockFindAndCountAll.mockResolvedValue({
       count: 10,
       rows: Array(10)
         .fill(null)
