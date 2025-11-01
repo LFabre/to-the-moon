@@ -1,1 +1,3 @@
-export const ErrorCodes = {};
+export const ErrorCodes = {
+  RESOURCE_ALREADY_EXISTS: 'RESOURCE_ALREADY_EXISTS',
+};

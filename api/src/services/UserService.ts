@@ -16,4 +16,14 @@ export class UserService {
       total: count,
     };
   }
+
+  public static async createUser(email: string): Promise<User> {
+    const newUser = await ModelUser.create({ email });
+    return newUser.toJSON();
+  }
+
+  public static async getUserByEmail(email: string): Promise<User | null> {
+    const user = await ModelUser.findOne({ where: { email } });
+    return user ? user.toJSON() : null;
+  }
 }
