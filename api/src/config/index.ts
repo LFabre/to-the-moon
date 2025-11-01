@@ -11,6 +11,6 @@ export const Config = {
     port: process.env.LISTEN_PORT,
   },
   request: {
-    traceHeader: 'x-trace',
+    traceHeader: process.env.REQUEST_TRACE_HEADER || 'x-trace',
   },
 };
