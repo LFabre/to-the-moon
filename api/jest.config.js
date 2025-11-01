@@ -1,0 +1,25 @@
+module.exports = {
+  displayName: 'unit',
+  preset: 'ts-jest/presets/js-with-ts',
+  setupFiles: ['<rootDir>/__tests__/__setup__/setupTests.ts'],
+  testEnvironment: 'node',
+  testRegex: '/__tests__/.+\\.(test|spec)\\.ts$',
+  transform: {
+    '^.+\\.(test|spec)\\.ts?$': 'ts-jest',
+  },
+  transformIgnorePatterns: ['node_modules/(?!troublesome-dependency/.*)'],
+  moduleNameMapper: {
+    '^@config$': '<rootDir>/src/config/index.ts',
+    '^@controllers/(.*)$': '<rootDir>/src/controllers/$1',
+    '^@database$': '<rootDir>/src/database/index.ts',
+    '^@database/(.*)$': '<rootDir>/src/database/$1',
+    '^@errors$': '<rootDir>/src/errors/index.ts',
+    '^@errors/(.*)$': '<rootDir>/src/errors/$1',
+    '^@middlewares$': '<rootDir>/src/middlewares/index.ts',
+    '^@middlewares/(.*)$': '<rootDir>/src/middlewares/$1',
+    '^@routes$': '<rootDir>/src/routes/index.ts',
+    '^@routes/(.*)$': '<rootDir>/src/routes/$1',
+    '^@services$': '<rootDir>/src/services/index.ts',
+    '^@services/(.*)$': '<rootDir>/src/services/$1',
+  },
+};

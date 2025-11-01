@@ -1,0 +1,47 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2016,
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "codeFrame": false,
+    "es6": true
+  },
+  "env": {
+    "jest": true,
+    "node": true,
+    "es6": true
+  },
+  "extends": ["prettier", "eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    // Turned off rules
+    "no-return-assign": "off",
+    "no-plusplus": "off",
+    "no-console": "off",
+    "no-bitwise": "off",
+    "arrow-body-style": "off",
+    "no-underscore-dangle": "off",
+    "no-control-regex": "off",
+    "semi": ["error", "always"],
+    "spaced-comment": ["error", "always"],
+    "prefer-promise-reject-errors": ["off"],
+    "max-len": [
+      "error",
+      {
+        "code": 110
+      }
+    ],
+    "eol-last": "error",
+    "no-var": "error",
+    "object-shorthand": "error",
+    "no-return-await": "error",
+    "prefer-template": "error",
+    "prefer-const": "error",
+    "lines-between-class-members": "error",
+    "prefer-arrow-callback": "error",
+
+    // Typescript
+    "@typescript-eslint/no-explicit-any": "off"
+  }
+}

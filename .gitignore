@@ -1,0 +1,38 @@
+# Packages
+node_modules
+/.pnp
+.pnp
+.pnp.js
+.yarn/install-state.gz
+/coverage
+
+# Build
+.next/
+out/
+build
+dist
+*.tsbuildinfo
+/out
+/build
+.DS_Store
+
+# Testing
+coverage
+
+# Envs
+*.pem
+.env
+.env*
+next-env.d.ts
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+*.logs
+
+# IDE
+.ide
+.idea
+.vscode
