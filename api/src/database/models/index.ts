@@ -1,0 +1,2 @@
+export { ModelUser } from './ModelUser';
+

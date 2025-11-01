@@ -28,6 +28,8 @@
       "@database/*": ["database/*"],
       "@errors": ["errors"],
       "@errors/*": ["errors/*"],
+      "@interfaces": ["interfaces"],
+      "@interfaces/*": ["interfaces/*"],
       "@middlewares": ["middlewares"],
       "@middlewares/*": ["middlewares/*"],
       "@routes": ["routes"],

@@ -15,6 +15,8 @@ module.exports = {
     '^@database/(.*)$': '<rootDir>/src/database/$1',
     '^@errors$': '<rootDir>/src/errors/index.ts',
     '^@errors/(.*)$': '<rootDir>/src/errors/$1',
+    '^@interfaces$': '<rootDir>/src/interfaces/index.ts',
+    '^@interfaces/(.*)$': '<rootDir>/src/interfaces/$1',
     '^@middlewares$': '<rootDir>/src/middlewares/index.ts',
     '^@middlewares/(.*)$': '<rootDir>/src/middlewares/$1',
     '^@routes$': '<rootDir>/src/routes/index.ts',
