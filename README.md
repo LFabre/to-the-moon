@@ -31,6 +31,7 @@ Below a brief description on how to setup for Development and and Integration Te
 - Install the dependencies `npm i`
 - Start the integration containers with `docker compose --env-file .env up --build`
 - Wait until the api is successfully running
+  - You should see the following log: `to-the-moon-api | [server] Server is running at port 3000`
 - On another shell execute the tests with: `cd integration && npm run test`
 - Note: To successfully run the tests again please rebuild the containers with: `docker compose --env-file .env down` and than `docker compose --env-file .env up --build`
 
@@ -39,7 +40,7 @@ Below a brief description on how to setup for Development and and Integration Te
 Table below lists the items on the way towards being able to deploy, further develop and maintain this REST Api in production. Tasks are
 ordered according to their priority with **the topmost row being the next item the team picks for development**.
 
-| Setup - Improve Prettier                       |                                                                                                                                                                                                                                                                                                  Rationale |
+| Item                                           |                                                                                                                                                                                                                                                                                                  Rationale |
 |------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | Setup - Improve Prettier                       | Improve the project setup to use a single prettier file at the root of the project applied to all folderImprove the project setup to use a single prettier file at the root of the project applied to all folders This will improve the project structure and keep an uniform format for all sub projects. |
 | Setup - Improve Eslint                         | Improve the project setup to use a single eslint configuration file at the root of the project applied to all folder. This will improve the project structure and keep a single source of lint errors.                                                                                                     |
