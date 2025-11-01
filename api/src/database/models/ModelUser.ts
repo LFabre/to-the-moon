@@ -2,7 +2,7 @@ import { DataTypes, Model, Optional } from 'sequelize';
 import { User } from '@interfaces/User';
 import { sequelize } from '../connection';
 
-export type UserOptionalAttributes = Optional<User, 'id' | 'createdAt' | 'updatedAt'>;
+type UserOptionalAttributes = Optional<User, 'id' | 'createdAt' | 'updatedAt'>;
 
 export class ModelUser extends Model<User, UserOptionalAttributes> implements User {
   declare id: number;
@@ -38,7 +38,7 @@ ModelUser.init(
   },
   {
     sequelize,
-    tableName: 'Users',
+    tableName: 'users',
     timestamps: true,
     indexes: [
       {

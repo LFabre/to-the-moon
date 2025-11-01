@@ -11,7 +11,7 @@ jest.mock('@utils/uuid', () => ({
 
 describe('Trace Header', () => {
   test('Ensure trace header is returned', async () => {
-    const res = await supertest(MainApp).get('/ping');
+    const res = await supertest(MainApp).get('/v1/ping');
 
     expect(res.status).toBe(200);
     expect(res.headers[traceHeader]).toBe(traceMock);
