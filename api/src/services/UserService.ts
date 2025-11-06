@@ -26,4 +26,9 @@ export class UserService {
     const user = await ModelUser.findOne({ where: { email } });
     return user ? user.toJSON() : null;
   }
+
+  public static async getUserById(id: number): Promise<User | null> {
+    const user = await ModelUser.findOne({ where: { id } });
+    return user ? user.toJSON() : null;
+  }
 }
